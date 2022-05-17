@@ -1,0 +1,23 @@
+.cardContainer {
+    margin: 10px 0;
+    background: #fff;
+    border-radius: 10px;
+    display: flex;
+    justify-content: space-between;
+    padding: 10px;
+    max-width: 300px;
+}
+.cardTitle{
+    display: block;
+    /* margin: 10% 14%; */
+    /* width: 201px; */
+    word-wrap: wrap;
+    word-break: break-all;
+}
+.cardAction{
+    padding: 5px;
+}
+.cardAction:hover {
+    background: #dedede;
+    border-radius: 50%;
+}

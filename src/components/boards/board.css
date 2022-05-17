@@ -1,0 +1,10 @@
+.boardTitle {
+    text-align: center;
+    margin: 10px 0;
+    font-size: 20px;
+}
+
+.backArrow{
+    margin-left: 10px;
+    margin-top: 10px;
+}

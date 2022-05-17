@@ -3,16 +3,40 @@ import { connect } from "react-redux";
 import "./app.css";
 import AddNewItem from "./Board/Actions/AddNewItem";
 import {DragDropContext} from "react-beautiful-dnd"
+import {useState,useEffect} from "react"
+import {sort} from "../actions"
 
-function App({ lists }) {
+function App({ lists, dispatch }) {
   console.log(lists, "lists");
 
-  const onDragEnd = () => {
+  const onDragEnd = (result) => {
+    const {destination, source, draggableId} = result; 
 
+    if(!destination) {
+      return;
+    }
+
+   dispatch(sort(
+     source.droppableId,
+     destination.droppableId,
+     source.index,
+     destination.index,
+     draggableId
+   ))
+
+    
   }
+
+
+  const [data, setData] = useState([])
+  const [show, setShow] = useState(false)
+  const [id, setID] = useState(null)
+
+
 
   // const [lists,]
   return (
+    <>
     <DragDropContext onDragEnd={onDragEnd} >
       <div className="App">
       <div className="lists-wrapper">
@@ -23,6 +47,30 @@ function App({ lists }) {
       </div>
     </div>
     </DragDropContext>
+
+    
+{/* {
+  data.map((user) => {
+    return(
+      <>
+
+      <div onClick = {() => {
+        setID(user.id)
+        setShow(!show)}} >
+        {user.name}
+      </div>
+      {
+        id === user.id && show ?
+        <p>{user.phone}</p> :
+        null
+      }
+     
+      </>
+    )
+  })
+} */}
+
+    </>
     
   );
 }

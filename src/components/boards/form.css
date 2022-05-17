@@ -1,0 +1,17 @@
+.inputComponent {
+    min-height: 45px;
+    width: 100%;
+    padding: 10px;
+    outline: none;
+    border: none;
+    border-radius: 10px;
+}
+.inputActionsContainer{
+    display: flex;
+    justify-content: end;
+    align-items: center;
+}
+.closeInput{
+    padding: 10px;
+    cursor: pointer;
+}
