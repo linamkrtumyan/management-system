@@ -88,7 +88,8 @@ p {
     transform: skew(6deg);
     margin-right: -36px;
     align-items: start;
-    background-image: linear-gradient(-45deg, #8F479A 1%, #DC2A74 100%);
+    background-image:  linear-gradient(-45deg, #6ce7cf 1%, #166265 100%)
+    // linear-gradient(-45deg, #6ce7cf 1%, #166265 100%)
   }
   
   .go-arrow {
@@ -99,7 +100,7 @@ p {
   }
 
   &:hover {
-    border: 1px solid #CD3D73;
+    border: 1px solid #166265;
   }
   
   h3 {margin-top: 8px;}

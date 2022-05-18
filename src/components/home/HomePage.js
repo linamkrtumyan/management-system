@@ -6,16 +6,8 @@ function HomePage() {
 
   return (
     <div>
-      <div>My Boards</div>
-      <div className="boards-container">
-        {array.map((arr, index) => {
-          return (
-            <div key={index}>
-              <BoardCard index={index} />
-            </div>
-          );
-        })}
-      </div>
+      <div>Home Page</div>
+      
     </div>
   );
 }

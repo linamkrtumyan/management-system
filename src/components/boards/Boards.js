@@ -27,7 +27,7 @@ const Boards = ({ boards, boardOrder, dispatch }) => {
       return (
         <Link
           key={boardID}
-          to={`/${board.id}`}
+          to={`/boards/${board.id}`}
           style={{ textDecoration: "none" }}
         >
           <BoardCard {...board} />
@@ -53,6 +53,7 @@ const Boards = ({ boards, boardOrder, dispatch }) => {
 
   return (
     <div>
+      {/* <p style={{textAlign:"start", fontSize:"20px", margin:"20px 10px"}}  className="boardsTitle">My Boards</p> */}
       <div style={{display: "flex",flexWrap: "wrap"}} >{renderBoards()}</div>
       {renderCreateBoard()}
     </div>

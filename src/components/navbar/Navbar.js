@@ -41,9 +41,15 @@ console.log(width,"width")
         <NavLink to="/home"  onClick={closeMenu} className={`navbarItem ${navbarOpen ? "" : "hideItem"}`}>
           HOME
         </NavLink>
-        <NavLink to="/board"  onClick={closeMenu} className={`navbarItem ${navbarOpen ? "" : "hideItem"}`}>
-          BOARD
+        <NavLink to="/boards"  onClick={closeMenu} className={`navbarItem ${navbarOpen ? "" : "hideItem"}`}>
+          BOARDS
         </NavLink>
+        <NavLink to="/users"  onClick={closeMenu} className={`navbarItem ${navbarOpen ? "" : "hideItem"}`}>
+          USERS
+        </NavLink>
+        {/* <NavLink to="/board"  onClick={closeMenu} className={`navbarItem ${navbarOpen ? "" : "hideItem"}`}>
+          BOARD
+        </NavLink> */}
       </nav>
     </>
   );

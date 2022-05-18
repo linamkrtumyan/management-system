@@ -4,7 +4,7 @@ const initialState = {
   "board-0": {
     id: "board-0",
     lists: ["list-0"],
-    title: "myboard"
+    title: "My board"
   }
 };
 

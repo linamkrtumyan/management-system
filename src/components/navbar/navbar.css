@@ -3,7 +3,7 @@
 .navBar {
   /* position: relative; */
   width: 300px;
-  background-image: linear-gradient(-45deg, #8f479a 1%, #dc2a74 100%);
+  background-image:linear-gradient(-45deg, #6ce7cf 1%, #166265 100%);
   height: 100vh;
 
   position: absolute;
@@ -68,13 +68,14 @@
 }
 .active {
   background-color: #fff;
-  color: #dc2a74;
+  color: #166265;
   /* font-size: 72px; */
 }
 
 .hideMenu {
   width: 50px;
-  position: relative;
+  position: fixed;
+  /* position: relative; */
 }
 .hideItem {
   display: none;
@@ -91,7 +92,7 @@
   }
 
   .hideMenu {
-    width: 120px;
+    /* width: 120px; */
   }
   .hideItem {
     display: none;
