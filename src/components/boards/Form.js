@@ -29,7 +29,7 @@ const Form = React.memo(
   ({ list, text = "", onChange, closeForm, children }) => {
     const placeholder = list
       ? "Enter list title..."
-      : "Enter a title for this card...";
+      : "Enter a title...";
 
     const handleFocus = (e) => {
       e.target.select();

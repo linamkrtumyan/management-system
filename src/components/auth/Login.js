@@ -6,9 +6,13 @@ function Login({signIn, errorMessage}) {
   const [userName, setUserName] = useState("");
   const [password, setPassword] = useState("");
 
+
   const [name, setName] = useState("");
+  const [lastName, setLastName] = useState("")
+  const [username, setUsername] = useState("")
   const [email, setEmail] = useState("");
   const [signUpPassword, setSignUpPassword] = useState("");
+  const [signUpConfiemPassword, setSignUpConfirmPassword] = useState("");
 
   const [signUp, setSignUp] = useState(false);
 
@@ -41,7 +45,21 @@ function Login({signIn, errorMessage}) {
               name="name"
               onChange={(e) => setName(e.target.value)}
               type="text"
-              placeholder="Name"
+              placeholder="Firstname"
+            />
+            <input
+              value={lastName}
+              name="name"
+              onChange={(e) => setLastName(e.target.value)}
+              type="text"
+              placeholder="Lastname"
+            />
+            <input
+              value={username}
+              name="name"
+              onChange={(e) => setUsername(e.target.value)}
+              type="text"
+              placeholder="Username"
             />
             <input
               value={email}
@@ -56,6 +74,13 @@ function Login({signIn, errorMessage}) {
               onChange={(e) => setSignUpPassword(e.target.value)}
               type="password"
               placeholder="Password"
+            />
+            <input
+              value={signUpConfiemPassword}
+              name="signUpConfirmPassword"
+              onChange={(e) => setSignUpConfirmPassword(e.target.value)}
+              type="password"
+              placeholder="Confirm Password"
             />
             <button className="submitButton" >Sign Up</button>
           </div>

@@ -2,8 +2,9 @@
     "users": [
       {"id":1 ,"fullname": "Lina Mkrtumyan", "email": "mkrtumyanlina@gmail.com", "username": "linamkrtumyan", "password": "qwerty" },
       {"id":2 ,"fullname": "Varduhi Mehrabyan", "email": "mehrabyanvarduhi@gmail.com", "username": "varduhimehrabyan", "password": "qwerty" },
-      {"id":3 ,"fullname": "Arthur Totosyan", "email": "torosyanarthur@gmail.com", "username": "arthurtorosyan", "password": "qwerty" },
-      {"id":4 ,"fullname": "Vahe Azizyan", "email": "azizyanvahe@gmail.com", "username": "vaheazizyan", "password": "qwerty" }
+      {"id":3 ,"fullname": "Arthur Torosyan", "email": "torosyanarthur@gmail.com", "username": "arthurtorosyan", "password": "qwerty" },
+      {"id":4 ,"fullname": "Vahe Azizyan", "email": "azizyanvahe@gmail.com", "username": "vaheazizyan", "password": "qwerty" },
+      {"id":5 ,"fullname": "Garik Galstyan", "email": "galstyagarik@gmail.com", "username": "garikgalstyan", "password": "qwerty" }
     ],
   "posts": [{ "id": 1, "title": "json-server", "author": "typicode" }],
   "comments": [{ "id": 1, "body": "some comment", "postId": 1 }],

@@ -2,10 +2,12 @@
     margin: 10px 0;
     background: #fff;
     border-radius: 10px;
-    display: flex;
+    /* display: flex; */
     justify-content: space-between;
-    padding: 10px;
+    padding: 20px 10px;
     max-width: 300px;
+    position: relative;
+    /* z-index: 99999; */
 }
 .cardTitle{
     display: block;
@@ -13,6 +15,10 @@
     /* width: 201px; */
     word-wrap: wrap;
     word-break: break-all;
+    margin-right: 24px;
+
+    width: 200px;
+    
 }
 .cardAction{
     padding: 5px;
@@ -20,4 +26,15 @@
 .cardAction:hover {
     background: #dedede;
     border-radius: 50%;
+}
+.userItem{
+    border: 1px solid;
+    padding: 10px;
+    margin: 10px;
+}
+.cardModalTitleContainer{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 20px;
 }

@@ -75,12 +75,12 @@ function RoutesComponent() {
               <Header signOut={signOut} authorizedUser={authorizedUser} />
 
               <Routes>
-                <Route path="/home" element={<HomePage />} />
+                {/* <Route path="/home" element={<HomePage />} /> */}
                 <Route path="/boards" element={<Boards />} />
                 <Route path="/boards/:boardID" element={<Board />} />
                 <Route path="/users" element={<Users />} />
 
-                <Route path="*" element={<Navigate to="/home" replace />} />
+                <Route path="*" element={<Navigate to="/boards" replace />} />
               </Routes>
             </div>
           </div>

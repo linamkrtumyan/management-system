@@ -3,7 +3,7 @@ import { connect } from "react-redux";
 import "./app.css";
 import AddNewItem from "./Board/Actions/AddNewItem";
 import {DragDropContext} from "react-beautiful-dnd"
-import {useState,useEffect} from "react"
+import React, {useState,useEffect} from "react"
 import {sort} from "../actions"
 
 function App({ lists, dispatch }) {
